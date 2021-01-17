@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
+import '../../App.css';
 
-class Projects extends Component {
-    render() {
-        return (
-            <div className="page">
-                PROJECT PAGE
-            </div>
-        );
-    }
+const Projects = () => {
+    return (
+
+        <div className="page">
+            PROJECT PAGE
+        </div>
+    );  
 }
 
 export default Projects;

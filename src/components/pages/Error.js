@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import '../../App.css';
 
-class Error extends Component {
-    render() {
-        return (
-            <div className="page">
-                
-            </div>
-        );
-    }
+const Error = () => {
+    return (
+        <div className="page">
+            ERROR PAGE
+        </div>
+    );  
 }
 
 export default Error;
