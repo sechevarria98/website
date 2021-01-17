@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 
 :root {
     --text-primary: #b6b6b6;
@@ -88,9 +90,37 @@ body {
 .fileheader .contact {
     list-style: none;
     margin-left: 4rem;
+    font-family: 'Lato';
+    font-size: 14px;
 }
 
 .fileheader .contact a {
     text-decoration: none;
     color: black;
+}
+
+.fileheader h1 {
+    font-family: 'Abril Fatface';
+}
+
+.list-item {
+    list-style: none;
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+.resumepage h2,
+.resumepage h3 {
+    font-family: 'Oswald';
+    margin-top: 0;
+}
+
+.skills p {
+    font-family: 'Lato';
+}
+
+.dates {
+    font-family: 'Lato';
+    font-size: 14px;
+    margin-left: 9rem;
 }

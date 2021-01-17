@@ -15,19 +15,19 @@ class Resume extends Component {
                         </ul>
                     </div>
                     
-                    <div class="Experience">
-                        <h2>Experience</h2>
-                        <h3>e-Stewards Global Impact Calculator <span class="date-2">March 2020 | July 2020</span></h3>
+                    <div class="experience">
+                        <h2>Internship Experience</h2>
+                        <h3>e-Stewards Global Impact Calculator <span class="dates">March 2020 | July 2020</span></h3>
                         <ul>
                             <li class="list-item">Built web appliction using React Framework</li>
                             <li class="list-item">Met with representatives 2-3 weeks</li>
                         </ul>
                     </div>
 
-                    <div class="Education">
+                    <div class="education">
                         <h2>Education</h2>
-                        <h3>Illinois Institute of Technology - Chicago, IL <strong class="date-1">August 2017 | May 2021</strong></h3>
-                        <h3>Bachelors of Science in computer Science</h3>
+                        <h3>Illinois Institute of Technology - Chicago, IL <strong class="dates">August 2017 | May 2021</strong></h3>
+                        <h3>Bachelors of Science in computer Science | Major GPA: 3.1</h3>
             
                         <ul>
                             <li class="list-item">Object Oriented Programming in Java</li>
@@ -39,7 +39,7 @@ class Resume extends Component {
                         </ul>
                     </div>
 
-                    <div class="Projects">
+                    <div class="projects">
                         <h2>Projects</h2>
                         <h3>Online Grocery Store</h3>
                         <ul>
@@ -61,21 +61,21 @@ class Resume extends Component {
                         </ul>
                     </div>
 
-                    <div class="Skills">
+                    <div class="skills">
                         <h2>Technical Skills</h2>
                         <p>Programming Languages: Java, Python, C, HTML, CSS3, JavaScript, SQL</p>
                     </div>
             
-                    <div class="Experience">
+                    <div class="alt-experience">
                         <h2>Volunteer Experience</h2>
-                        <h3>Chicago Public Library - Chicago, IL <strong class="date-2">August 2017 | May 2018</strong></h3>
+                        <h3>Chicago Public Library - Chicago, IL <strong class="dates">August 2017 | May 2018</strong></h3>
                         <ul>
                             <li class="list-item">Assisted people at the library with what they needed assistance on.</li>
                             <li class="list-item">Setup various live streaming sessions on Twitch for the library.</li>
                             <li class="list-item">Managed 12+ people for the live streaming sessions.</li>
                         </ul>
             
-                        <h3>Working Bikes - Chicago, IL <strong class="date-3">November 2017 | November 2017</strong></h3>
+                        <h3>Working Bikes - Chicago, IL <strong class="dates">November 2017 | November 2017</strong></h3>
                         <ul>
                             <li class="list-item">Moved broken bikes from storage to work area.</li>
                             <li class="list-item">Repaired about 30+ broken bikes, e.g., replaced chains, fixed handlebars, etc.</li>
