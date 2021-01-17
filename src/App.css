@@ -13,7 +13,6 @@
 body {
     width: 100vh;
     height: 100vh;
-    background-attachment: fixed;
     background-color: var(--bg-primary);
 }
 
@@ -22,12 +21,13 @@ body {
     width: 100vw;
     height: 3rem;
     z-index: 1;
+    overflow: hidden;
+    position: fixed;
     background-color: var(--bg-secondary);
 }
 
 .navbar {
     list-style: none;
-    padding: 0;
     margin: 0;
     display: flex;
     flex-flow: row nowrap;
@@ -60,21 +60,24 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: 300ms ease;
 }
 
 .page {
+    overflow: hidden;
     position: absolute;
     top: 5rem;
-    left: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .resumepage {
-    background-color: #e2e2e2;
     display: flex;
     flex-flow: column nowrap;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem;
+    background-color: #e2e2e2;
+    padding: 2rem;
 }
 
 .fileheader {
@@ -84,6 +87,7 @@ body {
 
 .fileheader .contact {
     list-style: none;
+    margin-left: 4rem;
 }
 
 .fileheader .contact a {
