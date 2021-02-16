@@ -3,34 +3,26 @@ import { NavLink } from 'react-router-dom';
 import '../App.css';
 
 function Navigation() {
+    const paths = {
+        '/': { name: "Home"},
+        '/resume': { name: "Resume"},
+        '/projects': { name: "Projects"}
+    }
+
+
     return (
         <nav className="navigation">
             <ul className="navbar">
-                <NavLink className="links" to = "/">
-                    <li className="navitem">
-                        <div className="navlink">
-                            <h2 className="navtext">Home</h2>
-                        </div>
-                    </li>
-                </NavLink>
-
-                <NavLink className="links" to = "/projects">
-                    <li className="navitem">
-                        <div className="navlink">
-                            <h2 className="navtext">Projects</h2>
-                        </div>
-                    </li>
-                </NavLink>
-
-                <NavLink className="links" to = "/resume">
-                    <li className="navitem">
-                        <div className="navlink">
-                            <h2 className="navtext">Resume</h2>
-                        </div>
-                    </li>
-                </NavLink>
+                {Object.entries(paths).map(( [path, {name}]) => (     
+                    <NavLink className="links" to = {path}>
+                        <li className="navitem">
+                            <div className="navlink"> 
+                                <h1 className="navtext"> {name} </h1>
+                            </div>
+                        </li>
+                    </NavLink>      
+                ))}
             </ul>
-
         </nav>
     );
 }
