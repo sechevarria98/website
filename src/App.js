@@ -4,9 +4,14 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/pages/Home';
-import Error from './components/pages/Error';
 import Projects from './components/pages/Projects';
 import Resume from './components/pages/Resume';
+
+const paths = {
+  "/": {Comp: Home, exact: true},  
+  "/projects": {Comp: Projects, exact:false},
+  "/resume": {Comp: Resume, exact:false}
+}
 
 function App() {
   return (
@@ -14,10 +19,9 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path = "/" component = { Home } />
-          <Route exact path = "/projects" component = { Projects } />
-          <Route exact path = "/resume" component = { Resume } />
-          <Route component = { Error } />
+          {Object.entries(paths).map(( [path, {Comp, exact}]) => (
+            <Route exact= { exact } path = { path } component = { Comp }/>
+          ))}
         </Switch>
       </Router>
     </div>
