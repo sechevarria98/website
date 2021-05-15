@@ -15,117 +15,87 @@
 body {
     width: 100vh;
     height: 100vh;
-    background-color: var(--bg-primary);
 }
 
 .navigation {
     top: 0;
-    width: 100vw;
-    height: 3rem;
+    width: 5rem;
+    height: 100vh;
     z-index: 1;
-    overflow: hidden;
     position: fixed;
     background-color: var(--bg-secondary);
+    transition: width 600ms ease;
+}
+
+.navigation:hover {
+    width: 16rem;
 }
 
 .navbar {
     list-style: none;
     margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    align-items: left;
+    height: 100vh;
 }
 
 .links {
     text-decoration: none;
 }
 
-.links:hover {
-    cursor: pointer;
+.navitem {
+    width: 100%;
 }
 
-.navitem {
-    margin-left: 3rem;
-    margin-right: 3rem;
+.navlink {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    filter: grayscale(100%) opacity(1);
+    transition: 600ms;
+    color: var(--text-secondary);
+}
+
+.navlink:hover {
+    filter: grayscale(0%) opacity(1);
+    background: #e4e4e4;
+    color: #000000;
+}
+
+.navlink:hover:first-child {
+    filter: grayscale(100%) opacity(1);
 }
 
 .navtext {
     font-size: 16px;
     font-family: 'Lato';
-    color: var(--text-secondary);
+    display: none;
+    margin-left: 4rem;
 }
 
-.navtext:hover {
-    background: linear-gradient(90deg,#ff8a00,#e52e71);
-    text-shadow: none;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: 300ms ease;
+.navigation:hover .menu img {
+    transition: 600ms;
+}
+
+.navigation:hover .navtext {
+    display: inline;
+}
+
+.navlink img {
+    width: 2rem;
+    margin: 0 1.5rem;
 }
 
 .page {
     overflow: hidden;
     position: absolute;
-    top: 5rem;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+    margin-left: 5rem;
 }
 
 iframe {
     height: 100vh;
     width: 100vw;
 }
-
-/* .resumepage {
-    display: flex;
-    flex-flow: column nowrap;
-    background-color: #e2e2e2;
-    padding: 2rem;
-}
-
-.fileheader {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.fileheader .contact {
-    list-style: none;
-    margin-left: 4rem;
-    font-family: 'Lato';
-    font-size: 14px;
-}
-
-.fileheader .contact a {
-    text-decoration: none;
-    color: black;
-}
-
-.fileheader h1 {
-    font-family: 'Abril Fatface';
-}
-
-.list-item {
-    list-style: none;
-    font-family: 'Lato';
-    font-size: 16px;
-}
-
-.resumepage h2,
-.resumepage h3 {
-    font-family: 'Oswald';
-    margin-top: 0;
-}
-
-.skills p {
-    font-family: 'Lato';
-}
-
-.dates {
-    font-family: 'Lato';
-    font-size: 14px;
-    margin-left: 9rem;
-} */
