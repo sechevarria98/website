@@ -32,7 +32,7 @@ function Navigation(props)  {
                 <li className="navitem">
                     <div className="navlink" onClick = {() => props.themeToggle()}>
                         <img src={ props.currentTheme === 'Light' ? Light : Dark } alt = "theme logo" />
-                        <span className="navtext">Theme</span>
+                        <span className="navtext">{ props.currentTheme === 'Light' ? "Light" : "Dark"}</span>
                     </div>
                 </li>
 

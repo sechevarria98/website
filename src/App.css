@@ -99,10 +99,6 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
 }
 
-.navitem:last-child {
-    margin-top: auto;
-}
-
 .page {
     margin-left: 5rem;
 }
