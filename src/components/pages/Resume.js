@@ -1,14 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../App.css';
-
-// import PDF from '../../img/Echevarria_Resume.pdf';
+import {Document, Page} from 'react-pdf';
+import {pdfjs} from 'react-pdf';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
-    return (
+    const [numPages, setNumPages] = useState(null);
+    const [pageNumber, setPageNumber] = useState(1);
 
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages);
+        setPageNumber(1);
+    }
+
+    return (
         <div className="page">
-            RESUME PAGE
-            {/* <iframe title="PDF-Viewer" src={PDF}/> */}
+            <h2>RESUME</h2>
+            <Document
+                className = "docs"
+                file="/assets/docs/Echevarria_Resume.pdf"
+                onLoadSuccess={onDocumentLoadSuccess}
+            >
+                <Page pageNumber={pageNumber} />
+                <p className="pagenum">Page {pageNumber} of {numPages}</p>
+            </Document>
         </div>
     );  
 }
