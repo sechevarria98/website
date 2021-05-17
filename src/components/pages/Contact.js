@@ -4,7 +4,7 @@ import '../../App.css';
 const Contact = () => {
     return (
         <div className="page">
-            CONTACT PAGE
+            <h2>CONTACT</h2>
         </div>
 
     );  

@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Ubuntu&display=swap');
 
 :root {
     font-size: 16px;
@@ -109,4 +107,18 @@ body::-webkit-scrollbar-thumb {
 iframe {
     width: 80vw;
     height: 80vh;
+    border: none;
+}
+
+h2 {
+    font-family: 'Open Sans';
+}
+
+.projecttext {
+    width: 80vw;
+    font-family: 'Lato';
+}
+
+.pagenum {
+    font-family: 'Lato';
 }

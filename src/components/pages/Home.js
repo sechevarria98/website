@@ -4,7 +4,7 @@ import '../../App.css';
 const Home = () => {
     return (
         <div className="page">
-            HOME PAGE
+            <h2>HOME</h2>
         </div>
 
     );  
