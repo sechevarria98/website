@@ -15,7 +15,20 @@ const paths = {
   "/resume": {Comp: Resume, exact:false}
 }
 
-const StyledApp = styled.div``;
+const StyledApp = styled.div`
+.navigation {
+  background-color: ${props => props.theme.navbarBG};
+  color: ${props => props.theme.fontColor};
+}
+
+.menu {
+  background-color: ${props => props.theme.navbarBGsec};
+}
+
+.navigation .links {
+  color: ${props => props.theme.fontColor};
+}
+`;
 
 function App() {
 
@@ -31,7 +44,7 @@ function App() {
       <StyledApp>
         <div className="app">
           <Router>
-            <Navigation />
+            <Navigation themeToggle = {themeToggle} currentTheme = {currentTheme}/>
             <Switch>
               {Object.entries(paths).map(( [path, {Comp, exact}]) => (
                 <Route exact = { exact } path = { path } component = { Comp }/>

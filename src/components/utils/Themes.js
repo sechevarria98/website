@@ -1,18 +1,22 @@
 import {createGlobalStyle} from 'styled-components';
 
 export const lightTheme = {
-    body: '#e4e4e4',
-    fontColor: '#000000'
+    body: '#FEF5F5',
+    fontColor: '#000000',
+    navbarBG: '#ffffff',
+    navbarBGsec: '#e4e4e4'
 };
 
 export const darkTheme = {
-    body: '#23232e',
-    fontColor: '#ffffff'
+    body: '#393956',
+    fontColor: '#ffffff',
+    navbarBG: '#23232e',
+    navbarBGsec: '#141418'
 };
 
 export const GlobalStyles = createGlobalStyle`
-    body {
-        background-color: ${props => props.theme.body};
-        color: ${props => props.theme.fontColor};
-    }
+body {
+    background-color: ${props => props.theme.body};
+    color: ${props => props.theme.fontColor};
+}
 `;

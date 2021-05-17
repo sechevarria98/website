@@ -31,7 +31,6 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     position: fixed;
     z-index: 1;
-    background-color: #23232e;
     transition: width 600ms ease;
 }
 
@@ -60,8 +59,11 @@ body::-webkit-scrollbar-thumb {
 .menu {
     display: flex;
     height: 5rem;
-    background: #141418;
     align-items: center;
+}
+
+.navitem .menu:hover {
+    cursor: default;
 }
 
 .navlink:hover {
@@ -90,12 +92,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navigation:hover .navtext {
-    display: inline;
+    display: block;
 }
 
 .navigation .links {
     text-decoration: none;
-    color: #ffffff;
+}
+
+.navitem:last-child {
+    margin-top: auto;
 }
 
 .page {
