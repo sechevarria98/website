@@ -8,7 +8,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-    body: '#393956',
+    body: '#1C1C24',
     fontColor: '#ffffff',
     navbarBG: '#23232e',
     navbarBGsec: '#141418'

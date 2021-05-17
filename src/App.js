@@ -7,12 +7,14 @@ import './App.css';
 import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import Resume from './components/pages/Resume';
+import Contact from './components/pages/Contact';
 import { lightTheme, darkTheme, GlobalStyles } from './components/utils/Themes';
 
 const paths = {
   "/": {Comp: Home, exact: true},  
   "/projects": {Comp: Projects, exact:false},
-  "/resume": {Comp: Resume, exact:false}
+  "/resume": {Comp: Resume, exact:false},
+  "/contact": {Comp: Contact, exact:false}
 }
 
 const StyledApp = styled.div`
@@ -44,10 +46,18 @@ function App() {
       <StyledApp>
         <div className="app">
           <Router>
-            <Navigation themeToggle = {themeToggle} currentTheme = {currentTheme}/>
+            <Navigation
+              themeToggle = {themeToggle} 
+              currentTheme = {currentTheme}
+            />
             <Switch>
               {Object.entries(paths).map(( [path, {Comp, exact}]) => (
-                <Route exact = { exact } path = { path } component = { Comp }/>
+                <Route
+                  key = {path}
+                  exact = { exact } 
+                  path = { path } 
+                  component = { Comp }
+                />
               ))}
             </Switch>
           </Router>
