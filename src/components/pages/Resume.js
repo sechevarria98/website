@@ -22,8 +22,8 @@ const Resume = () => {
                 onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
-                <p className="pagenum">Page {pageNumber} of {numPages}</p>
             </Document>
+            <p className="pagenum">Page {pageNumber} of {numPages}</p>
         </div>
     );  
 }

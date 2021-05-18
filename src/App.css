@@ -121,6 +121,11 @@ h2 {
 
 .pagenum {
     font-family: 'Lato';
+    padding: .5rem;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: -1rem 0 3rem #000;
+    transform: translateY(-60px);
 }
 
 .cardlist {
@@ -136,14 +141,16 @@ h2 {
     width: 250px;
     padding: 1.5rem;
     border-radius: 16px;
-    background: #17141d;
     box-shadow: -1rem 0 3rem #000;
-    color: #ffffff;
     transition: .2s;
 }
 
 .cardheader {
     font-family: 'Concert One';
+}
+
+.cardheader a {
+    text-decoration: none;
 }
 
 .cardheader img {

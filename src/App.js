@@ -30,6 +30,15 @@ const StyledApp = styled.div`
 .navigation .links {
   color: ${props => props.theme.fontColor};
 }
+
+.card {
+  background: ${props => props.theme.cardBG};
+  color: ${props => props.theme.fontColor};
+}
+
+.cardheader a {
+  color: ${props => props.theme.fontColor};
+}
 `;
 
 function App() {

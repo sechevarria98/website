@@ -21,10 +21,17 @@ const Contact = () => {
 
             <section className = "cardlist">
                 {Object.entries(contacts).map(( [contact, {link, image}]) => (
-                    <article className = "card">
+                    <article className = "card" key = { contact }>
                         <header className = "cardheader">
                             <h2> <img src = {image} alt = {contact + "logo"} />{ contact }</h2>
-                            <p>{link}</p>
+                            {contact === 'phone' ? <p>{ link }</p> : 
+                                <a 
+                                    target="_blank" 
+                                    rel="noreferrer" 
+                                    href = { contact === 'email' ? "mailto:" + link : link } 
+                                > 
+                                {link} </a>
+                            }
                         </header>
                     </article> 
                 ))}
