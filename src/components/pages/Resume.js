@@ -18,7 +18,7 @@ const Resume = () => {
             <h2>RESUME</h2>
             <Document
                 className = "docs"
-                file="/assets/docs/Echevarria_Resume.pdf"
+                file="/website/blob/gh-pages/assets/docs/Echevarria_Resume.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
