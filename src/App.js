@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from './components/Navigation';
 import styled, { ThemeProvider } from 'styled-components';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/pages/Home';
@@ -41,7 +41,7 @@ const StyledApp = styled.div`
 }
 `;
 
-function App() {
+export default function App() {
 
   const [currentTheme, setTheme] = useState("Light");
 
@@ -54,7 +54,7 @@ function App() {
       <GlobalStyles/>
       <StyledApp>
         <div className="app">
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
             <Navigation
               themeToggle = {themeToggle} 
               currentTheme = {currentTheme}
@@ -74,6 +74,4 @@ function App() {
       </StyledApp>
     </ThemeProvider>
   );
-}
-
-export default App;
+};
