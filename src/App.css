@@ -75,12 +75,12 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Ubuntu';
 }
 
-.navlink img {
+.navlink svg {
     width: 2rem;
     margin: 0 1.5rem;
 }
 
-.menu img {
+.menu svg {
     width: 2rem;
     margin: 0 1.5rem;
 }

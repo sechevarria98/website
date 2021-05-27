@@ -2,20 +2,16 @@ import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom';
 import '../App.css';
 
-import Home from '../img/home.svg';
-import Resume from '../img/filepdf.svg';
-import Contact from '../img/fire.svg';
-import Project from '../img/database.svg';
-import Menu from '../img/bars.svg';
-import Light from '../img/lightbulb-solid.svg';
-import Dark from '../img/lightbulb-regular.svg';
+import { FaHome as Home, FaFilePdf as Resume,
+FaFire as Contact, FaDatabase as Project, FaBars as Menu,
+FaRegLightbulb as Dark, FaLightbulb as Light } from 'react-icons/fa';
 
 const Navigation = ( props )  => {
     const paths = {
-        '/': { name: "Home", image: Home},
-        '/resume': { name: "Resume", image: Resume},
-        '/projects': { name: "Projects", image: Project},
-        '/contact': {name: "Contact", image: Contact}
+        '/': { name: "Home", svg: <Home size = {70}/>},
+        '/resume': { name: "Resume", svg: <Resume size = {70}/>},
+        '/projects': { name: "Projects", svg: <Project size = {70}/>},
+        '/contact': {name: "Contact", svg: <Contact size = {70}/>}
     }
     
     return (
@@ -23,15 +19,15 @@ const Navigation = ( props )  => {
             <ul className="navbar">
                 <li className="navitem">
                     <div className="menu">
-                        <img src={ Menu } alt="menu logo" />
+                        <Menu size={40}/>
                     </div>
                 </li>
 
-                {Object.entries(paths).map(( [path, {name, image}]) => (     
+                {Object.entries(paths).map(( [path, {name, svg}]) => (     
                     <NavLink className="links" key = { path } to = { path }>
                         <li className="navitem">
                             <div className = "navlink">
-                                <img src={ image } alt = { name + "logo" }></img>
+                                { svg }
                                 <span className="navtext"> { name } </span>
                             </div>
                         </li>
@@ -40,7 +36,7 @@ const Navigation = ( props )  => {
 
                 <li className="navitem">
                     <div className="navlink" onClick = { () => props.themeToggle() }>
-                        <img src={ props.currentTheme === 'Light' ? Light : Dark } alt = "theme logo" />
+                        { props.currentTheme === 'Light' ? <Light size = {70}/> : <Dark size = {70}/> }
                         <span className="navtext">{ props.currentTheme === 'Light' ? "Light Mode" : "Dark Mode"}</span>
                     </div>
                 </li>
