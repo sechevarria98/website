@@ -1,35 +1,24 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.2e5e4bc6.chunk.css",
-    "main.js": "/website/static/js/main.d77d496c.chunk.js",
-    "main.js.map": "/website/static/js/main.d77d496c.chunk.js.map",
-    "runtime-main.js": "/website/static/js/runtime-main.029d81d6.js",
-    "runtime-main.js.map": "/website/static/js/runtime-main.029d81d6.js.map",
-    "static/js/2.ca0514f4.chunk.js": "/website/static/js/2.ca0514f4.chunk.js",
-    "static/js/2.ca0514f4.chunk.js.map": "/website/static/js/2.ca0514f4.chunk.js.map",
-    "static/js/3.7120af8f.chunk.js": "/website/static/js/3.7120af8f.chunk.js",
-    "static/js/3.7120af8f.chunk.js.map": "/website/static/js/3.7120af8f.chunk.js.map",
+    "main.css": "/website/static/css/main.ca3eab26.chunk.css",
+    "main.js": "/website/static/js/main.749569a4.chunk.js",
+    "main.js.map": "/website/static/js/main.749569a4.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.9fe348dc.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.9fe348dc.js.map",
+    "static/js/2.efdfe9b8.chunk.js": "/website/static/js/2.efdfe9b8.chunk.js",
+    "static/js/2.efdfe9b8.chunk.js.map": "/website/static/js/2.efdfe9b8.chunk.js.map",
+    "static/js/3.18f61898.chunk.js": "/website/static/js/3.18f61898.chunk.js",
+    "static/js/3.18f61898.chunk.js.map": "/website/static/js/3.18f61898.chunk.js.map",
     "index.html": "/website/index.html",
-    "static/css/main.2e5e4bc6.chunk.css.map": "/website/static/css/main.2e5e4bc6.chunk.css.map",
-    "static/js/2.ca0514f4.chunk.js.LICENSE.txt": "/website/static/js/2.ca0514f4.chunk.js.LICENSE.txt",
+    "static/css/main.ca3eab26.chunk.css.map": "/website/static/css/main.ca3eab26.chunk.css.map",
+    "static/js/2.efdfe9b8.chunk.js.LICENSE.txt": "/website/static/js/2.efdfe9b8.chunk.js.LICENSE.txt",
     "static/media/LoginParking.d75fad4d.png": "/website/static/media/LoginParking.d75fad4d.png",
-    "static/media/ParkingReserve.bc5ad52c.png": "/website/static/media/ParkingReserve.bc5ad52c.png",
-    "static/media/bars.e8db7520.svg": "/website/static/media/bars.e8db7520.svg",
-    "static/media/database.feb271fd.svg": "/website/static/media/database.feb271fd.svg",
-    "static/media/envelope-square-solid.bcb18744.svg": "/website/static/media/envelope-square-solid.bcb18744.svg",
-    "static/media/filepdf.b085fc41.svg": "/website/static/media/filepdf.b085fc41.svg",
-    "static/media/fire.f57a71d8.svg": "/website/static/media/fire.f57a71d8.svg",
-    "static/media/github.e2f07326.svg": "/website/static/media/github.e2f07326.svg",
-    "static/media/home.831db11d.svg": "/website/static/media/home.831db11d.svg",
-    "static/media/lightbulb-regular.f46eecaa.svg": "/website/static/media/lightbulb-regular.f46eecaa.svg",
-    "static/media/lightbulb-solid.1ec032d3.svg": "/website/static/media/lightbulb-solid.1ec032d3.svg",
-    "static/media/linkedin.f4041044.svg": "/website/static/media/linkedin.f4041044.svg",
-    "static/media/phone-solid.ac5f8fa5.svg": "/website/static/media/phone-solid.ac5f8fa5.svg"
+    "static/media/ParkingReserve.bc5ad52c.png": "/website/static/media/ParkingReserve.bc5ad52c.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.029d81d6.js",
-    "static/js/2.ca0514f4.chunk.js",
-    "static/css/main.2e5e4bc6.chunk.css",
-    "static/js/main.d77d496c.chunk.js"
+    "static/js/runtime-main.9fe348dc.js",
+    "static/js/2.efdfe9b8.chunk.js",
+    "static/css/main.ca3eab26.chunk.css",
+    "static/js/main.749569a4.chunk.js"
   ]
 }
