@@ -1,51 +1,75 @@
 [
     {
         "id": 1,
-        "title": "website",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/website",
+        "link": "https://github.com/sechevarria98/website",
+        "title": "Personal Website",
+        "description": "An update of my old personal website. I decided to use React.js to create this website",
+        "technincal": ["React.js", "JavaScript", "JSX", "CSS", "GitHub Pages", "JSON"]
     },
     {
         "id": 2,
-        "title": "CourseraReviews",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "dserapio/websitecalc",
+        "link": "https://github.com/dserapio/websitecalc",
+        "title": "Global Impact Calculator",
+        "description": " The e-stewards Global Impact Calculator started as a project for my Inter-Professional Project (IPRO) course. The amount of work to deliver a quality web app carried over into the summer of 2020. over the summer, the work consisted of researching the yield amount of various e-waste and building a calculator for people to determine the yields of their e-waste. During this process, the team and I met with representatives from e-Stewards. In these biweekly meetings, we discussed various aspects of the calculator and research.",
+        "technincal": ["React.js", "JavaScript", "JSX", "CSS", "GitHub Pages", "JSON"]
     },
     {
         "id": 3,
-        "title": "Language",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/CourseraReviews",
+        "link": "https://github.com/sechevarria98/CourseraReviews",
+        "title": "Coursera Reviews",
+        "description": "Sentiment analysis on Coursera Reviews.",
+        "technincal": ["Python", "Jupyter Notebook"]
     },
     {
         "id": 4,
-        "title": "StockWatch",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/Language",
+        "link": "https://github.com/sechevarria98/Language",
+        "title": "Language",
+        "description": "Discord Bot used to moderate a discord server",
+        "technincal": ["Python", "Discord.py"]
     },
     {
         "id": 5,
-        "title": "NewsGateway",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/StockWatch",
+        "link": "https://github.com/sechevarria98/StockWatch",
+        "title": "Stock Watch",
+        "description": "Android app meant to depict a stock watch. A request to an API is made to gather relevant data to be displayed",
+        "technincal": ["Java", "Android Studio"]
     },
     {
         "id": 6,
-        "title": "KnowYourGovernment",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
-        
+        "reponame": "sechevarria98/NewsGateway",
+        "link": "https://github.com/sechevarria98/NewsGateway",
+        "title": "News Gateway",
+        "description": "Android app meant to show news articles. Articles can be displayed by outlet and/or genre. A request to an API is made to gather relevant data",
+        "technincal": ["Java", "Android Studio"]
     },
     {
         "id": 7,
-        "title": "SmartParking",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/KnowYourGovernment",
+        "link": "https://github.com/sechevarria98/KnowYourGovernment",
+        "title": "Know Your Government",
+        "description": "Android app meant to display officials in the Government based on location. A request to an API is made to gather the necessary data",
+        "technincal": ["Java", "Android Studio"]
+        
     },
     {
         "id": 8,
-        "title": "OnlineGroceryStore",
-        "description": "Your looking at it",
-        "technincal": ["JSON", "Java"]
+        "reponame": "sechevarria98/SmartParking",
+        "link": "https://github.com/sechevarria98/SmartParking",
+        "title": "Smart Parking",
+        "description": "Software Engineering Project which simulates an smart parking application. Backend is managed through a PostgreSQL relational database",
+        "technincal": ["Java", "SQL", "PostgreSQL"]
+    },
+    {
+        "id": 9,
+        "reponame": "sechevarria98/OnlineGroceryStore",
+        "link": "https://github.com/sechevarria98/OnlineGroceryStore",
+        "title": "Online Grocery Store",
+        "description": "Database Project which simulates an online grocery store. Backend is managed through a PostgreSQL relational database",
+        "technincal": ["Java", "SQL", "PostgreSQL"]
     }
 ]
