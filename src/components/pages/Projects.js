@@ -1,12 +1,29 @@
 import '../../App.css';
 
+import JSONDATA from '../../data/db.json';
 import Login from '../../img/LoginParking.png';
 import Reserve from '../../img/ParkingReserve.png'
 
 const Projects = () => {
-    return (
 
+    return (
         <div className="page">
+            <section className="projectlist">
+                {JSONDATA.map((repositories, index) => (
+                    <article key={index} className="projects">
+                        <header className="projectheader">
+                            {repositories.title}
+                        </header>
+                        <article className="projectbody">
+                            <p> {repositories.description} </p>
+                            {repositories.technincal.map((skill, index)=> (
+                                <em key={index}>{skill}</em>
+                            ))}
+                        </article>
+                    </article>
+                ))}
+            </section>
+
             <h2>PROJECTS</h2>
 
             <h2>e-Stewards Global Impact Calculator</h2>

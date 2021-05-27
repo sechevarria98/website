@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navigation from './components/Navigation';
 import styled, { ThemeProvider } from 'styled-components';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
