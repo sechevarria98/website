@@ -1,4 +1,3 @@
-import React from 'react';
 import '../../App.css';
 
 import LinkedIn from '../../img/linkedin.svg';
@@ -24,13 +23,11 @@ const Contact = () => {
                     <article className = "card" key = { contact }>
                         <header className = "cardheader">
                             <h2> <img src = {image} alt = {contact + "logo"} />{ contact }</h2>
-                            {contact === 'phone' ? <p>{ link }</p> : 
-                                <a 
-                                    target="_blank" 
+                            {contact === 'phone' ? <a href= { "tel:+1" + link }>{ link }</a> : 
+                                <a target="_blank" 
                                     rel="noreferrer" 
-                                    href = { contact === 'email' ? "mailto:" + link : link } 
-                                > 
-                                {link} </a>
+                                    href = { contact === 'email' ? "mailto:" + link : link } > 
+                                { link } </a>
                             }
                         </header>
                     </article> 

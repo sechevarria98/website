@@ -1,7 +1,9 @@
-import React, {useState} from 'react';
-import '../../App.css';
-import {Document, Page} from 'react-pdf';
+import {useState} from 'react';
+import {Document, Page } from 'react-pdf';
 import {pdfjs} from 'react-pdf';
+import Button from '../utils/Button';
+
+import '../../App.css';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const Resume = () => {
@@ -18,13 +20,11 @@ const Resume = () => {
             <h2>RESUME</h2>
             <Document
                 className = "docs"
-                file="/assets/docs/Echevarria_Resume.pdf"
-
-                // only for npm run deploy
-                // file="/website/assets/docs/Echevarria_Resume.pdf"
+                file="/website/assets/docs/Echevarria_Resume.pdf"
                 onLoadSuccess={onDocumentLoadSuccess}
             >
                 <Page pageNumber={pageNumber} />
+                <Button href = "/website/assets/docs/Echevarria_Resume.pdf" target="_blank"/>
             </Document>
             <p className="pagenum">Page {pageNumber} of {numPages}</p>
         </div>

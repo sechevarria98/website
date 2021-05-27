@@ -1,6 +1,7 @@
-import React from 'react';
+import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom';
 import '../App.css';
+
 import Home from '../img/home.svg';
 import Resume from '../img/filepdf.svg';
 import Contact from '../img/fire.svg';
@@ -9,7 +10,7 @@ import Menu from '../img/bars.svg';
 import Light from '../img/lightbulb-solid.svg';
 import Dark from '../img/lightbulb-regular.svg';
 
-function Navigation(props)  {
+const Navigation = ( props )  => {
     const paths = {
         '/': { name: "Home", image: Home},
         '/resume': { name: "Resume", image: Resume},
@@ -27,18 +28,18 @@ function Navigation(props)  {
                 </li>
 
                 {Object.entries(paths).map(( [path, {name, image}]) => (     
-                    <NavLink className="links" key = {path} to = {path}>
+                    <NavLink className="links" key = { path } to = { path }>
                         <li className="navitem">
                             <div className = "navlink">
-                                <img src = { image } alt = { name + "logo"}/>
-                                <span className="navtext"> {name} </span>
+                                <img src={ image } alt = { name + "logo" }></img>
+                                <span className="navtext"> { name } </span>
                             </div>
                         </li>
                     </NavLink>      
                 ))}
 
                 <li className="navitem">
-                    <div className="navlink" onClick = {() => props.themeToggle()}>
+                    <div className="navlink" onClick = { () => props.themeToggle() }>
                         <img src={ props.currentTheme === 'Light' ? Light : Dark } alt = "theme logo" />
                         <span className="navtext">{ props.currentTheme === 'Light' ? "Light Mode" : "Dark Mode"}</span>
                     </div>
@@ -47,6 +48,11 @@ function Navigation(props)  {
             </ul>
         </nav>
     );
+}
+
+Navigation.prototype = {
+    currentTheme: PropTypes.string,
+    themeToggle: PropTypes.func
 }
 
 export default Navigation;
