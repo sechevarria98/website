@@ -17,7 +17,7 @@ const Resume = () => {
 
     return (
         <div className="page">
-            <h2>RESUME</h2>
+            <h1>RESUME</h1>
             <Document
                 className = "docs"
                 file="/website/assets/docs/Echevarria_Resume.pdf"

@@ -11,7 +11,7 @@ const Projects = () => {
                 {JSONDATA.map((repositories, index) => (
                     <article key={index} className="projects">
                         <header className="projectheader">
-                        <h2><a href={repositories.link} target="_blank">{repositories.reponame}</a></h2>
+                        <h2><a href={repositories.link} target="_blank" rel="noreferrer">{repositories.reponame}</a></h2>
                             <h3>{repositories.title}</h3>
                         </header>
                         <article className="projectbody">

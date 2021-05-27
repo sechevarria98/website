@@ -14,7 +14,7 @@ const Contact = () => {
 
     return (
         <div className="page">
-            <h2>CONTACT</h2>
+            <h1>CONTACT</h1>
 
             <section className = "cardlist">
                 {Object.entries(contacts).map(( [contact, {link, svg}]) => (

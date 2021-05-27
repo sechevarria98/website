@@ -4,7 +4,7 @@
         "reponame": "sechevarria98/website",
         "link": "https://github.com/sechevarria98/website",
         "title": "Personal Website",
-        "description": "An update of my old personal website. I decided to use React.js to create this website",
+        "description": "An update of my old personal website. I decided to use React.js to create this website. You are currently viewing this project.",
         "technincal": ["React.js", "JavaScript", "JSX", "CSS", "GitHub Pages", "JSON"]
     },
     {
