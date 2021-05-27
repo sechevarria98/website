@@ -1,17 +1,15 @@
-import '../../App.css';
+import {FaLinkedin as LinkedIn, FaGithub as Github,
+FaEnvelope as Email, FaPhone as Phone} from 'react-icons/fa';
 
-import LinkedIn from '../../img/linkedin.svg';
-import Github from '../../img/github.svg';
-import Email from '../../img/envelope-square-solid.svg';
-import Phone from '../../img/phone-solid.svg';
+import '../../App.css';
 
 const Contact = () => {
 
     const contacts = {
-        'email': { link: "samechevarria2@gmail.com", image: Email },
-        'phone': { link: "7739541626", image: Phone },
-        'github': { link: "https://github.com/sechevarria98", image: Github},
-        'linkedin': { link: " https://www.linkedin.com/in/samuel-echevarria-793a80199/", image: LinkedIn }
+        'email': { link: "samechevarria2@gmail.com", svg: <Email/> },
+        'phone': { link: "7739541626", svg: <Phone/> },
+        'github': { link: "https://github.com/sechevarria98", svg: <Github/>},
+        'linkedin': { link: " https://www.linkedin.com/in/samuel-echevarria-793a80199/", svg: <LinkedIn/> }
     }
 
     return (
@@ -19,10 +17,10 @@ const Contact = () => {
             <h2>CONTACT</h2>
 
             <section className = "cardlist">
-                {Object.entries(contacts).map(( [contact, {link, image}]) => (
+                {Object.entries(contacts).map(( [contact, {link, svg}]) => (
                     <article className = "card" key = { contact }>
                         <header className = "cardheader">
-                            <h2> <img src = {image} alt = {contact + "logo"} />{ contact }</h2>
+                            <h2> { svg } { contact }</h2>
                             {contact === 'phone' ? <a href= { "tel:+1" + link }>{ link }</a> : 
                                 <a target="_blank" 
                                     rel="noreferrer" 
