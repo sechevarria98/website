@@ -1,7 +1,9 @@
-const Button = ({ href, target }) => {
+import PropTypes from 'prop-types'
+
+const Button = ( props ) => {
 
     const downloadFile = () => {
-        window.open(href, target);
+        window.open(props.href, props.target);
     }
 
     return (
@@ -9,6 +11,11 @@ const Button = ({ href, target }) => {
           <button className = "download" onClick = {downloadFile} > Download </button>  
         </>
     )
+}
+
+Button.prototype = {
+    href: PropTypes.string,
+    target: PropTypes.string
 }
 
 export default Button;

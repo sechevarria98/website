@@ -115,7 +115,7 @@ h2 {
 }
 
 .projecttext {
-    width: 80vw;
+    width: clamp(45ch, 50%, 75ch);
     font-family: 'Lato';
 }
 
@@ -125,14 +125,14 @@ h2 {
     color: #000000;
     border-radius: 8px;
     box-shadow: -1rem 0 3rem #000;
-    transform: translateY(-120px);
+    transform: translateY(-8rem);
 }
 
 .download {
     padding: 20px;
     border: none;
     cursor: pointer;
-    background: #404040;
+    background: #005FBD;
     color: #ffffff;
     font-weight: 100;
     text-transform: uppercase;
@@ -142,6 +142,8 @@ h2 {
 }
 
 .download:hover {
+    background: #ffffff;
+    color: #005fbd;
     letter-spacing: 3px;
     font-weight: 700;
     transition: all 0.3s ease 0s;
