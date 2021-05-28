@@ -23,8 +23,8 @@ const Navigation = ( props )  => {
                     </div>
                 </li>
 
-                {Object.entries(paths).map(( [path, {name, svg}]) => (     
-                    <NavLink className="links" key = { path } to = { path }>
+                {Object.entries(paths).map(( [path, {name, svg}], index) => (     
+                    <NavLink className="links" key = { index } to = { path }>
                         <li className="navitem">
                             <div className = "navlink">
                                 { svg }
