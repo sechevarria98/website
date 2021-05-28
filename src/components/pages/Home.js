@@ -1,12 +1,13 @@
 import '../../App.css';
+import Picture from '../../img/me.jpg'
 
 const Home = () => {
     return (
         <div className="page">
-            <h1>HOME</h1>
 
-            <p> Welcome to the site. </p>
-            <p> Feel Free to look around. </p>
+            <img src={Picture} alt="me"></img>
+            <section></section>
+            
         </div>
 
     );  

@@ -2,10 +2,8 @@ import JSONDATA from '../../data/db.json';
 import '../../App.css';
 
 const Projects = () => {
-
     return (
         <div className="page">
-            <h1>PROJECTS</h1>
 
             <section className="projectlist">
                 {JSONDATA.map((repositories, index) => (

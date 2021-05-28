@@ -8,13 +8,14 @@ import Home from './components/pages/Home';
 import Projects from './components/pages/Projects';
 import Resume from './components/pages/Resume';
 import Contact from './components/pages/Contact';
+import Page from './components/Page';
 import { lightTheme, darkTheme, GlobalStyles } from './components/utils/Themes';
 
 const paths = {
-  "/": {Comp: Home, exact: true},  
-  "/projects": {Comp: Projects, exact:false},
-  "/resume": {Comp: Resume, exact:false},
-  "/contact": {Comp: Contact, exact:false}
+  "/": {Comp: Home, exact: true, name: "Home"},  
+  "/projects": {Comp: Projects, exact:false, name: "Projects"},
+  "/resume": {Comp: Resume, exact:false, name: "Resume"},
+  "/contact": {Comp: Contact, exact:false, name: "Contact"}
 }
 
 const StyledApp = styled.div`
@@ -60,12 +61,16 @@ export default function App() {
               currentTheme = {currentTheme}
             />
             <Switch>
-              {Object.entries(paths).map(( [path, {Comp, exact}]) => (
+              {Object.entries(paths).map(( [path, {Comp, exact, name}], index) => (
                 <Route
-                  key = {path}
+                  key = {index}
                   exact = { exact } 
                   path = { path } 
-                  component = { Comp }
+                  render = {(props) => (
+                    <Page title = {name}>
+                      <Comp {...props}/>
+                    </Page>
+                  )}
                 />
               ))}
             </Switch>

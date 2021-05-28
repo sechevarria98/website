@@ -14,8 +14,6 @@ const Contact = () => {
 
     return (
         <div className="page">
-            <h1>CONTACT</h1>
-
             <section className = "cardlist">
                 {Object.entries(contacts).map(( [contact, {link, svg}], index) => (
                     <article className = "card" key = { index }>

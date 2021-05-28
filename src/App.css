@@ -24,6 +24,11 @@ body::-webkit-scrollbar-thumb {
     background: #9A999D;
 }
 
+img {
+    border-radius: 50%;
+    width: 10vw;
+}
+
 iframe {
     width: 80vw;
     height: 80vh;
