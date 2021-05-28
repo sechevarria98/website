@@ -8,11 +8,11 @@ const Projects = () => {
             <section className="projectlist">
                 {JSONDATA.map((repositories, index) => (
                     <article key={index} className="projects">
-                        <header className="projectheader">
+                        <header>
                         <h2><a href={repositories.link} target="_blank" rel="noreferrer">{repositories.reponame}</a></h2>
                             <h3>{repositories.title}</h3>
                         </header>
-                        <article className="projectbody">
+                        <article>
                             <p> {repositories.description} </p>
                             
                             {repositories.technincal.map((skill, index)=> (

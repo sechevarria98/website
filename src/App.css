@@ -26,7 +26,7 @@ body::-webkit-scrollbar-thumb {
 
 img {
     border-radius: 50%;
-    width: 10vw;
+    margin-right: 3rem;
 }
 
 iframe {
@@ -36,6 +36,10 @@ iframe {
 }
 
 h1 {
+    font-family: 'Open Sans';
+}
+
+h2 {
     font-family: 'Open Sans';
 }
 
@@ -128,11 +132,15 @@ em {
 
 .page {
     margin-left: 5rem;
+    padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.maintext {
+    width: clamp(45ch, 50%, 75ch);
+}
 .projects {
     width: clamp(45ch, 50%, 75ch);
     font-family: 'Lato';

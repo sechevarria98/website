@@ -40,6 +40,10 @@ const StyledApp = styled.div`
 .cardheader a {
   color: ${props => props.theme.fontColor};
 }
+
+.homepage {
+  background: ${props => props.theme.cardBG};
+}
 `;
 
 export default function App() {

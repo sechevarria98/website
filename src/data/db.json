@@ -20,7 +20,7 @@
         "reponame": "sechevarria98/CourseraReviews",
         "link": "https://github.com/sechevarria98/CourseraReviews",
         "title": "Coursera Reviews",
-        "description": "Sentiment analysis on Coursera Reviews.",
+        "description": "Sentiment analysis on Coursera Reviews. There are a little over 100,000 unique reviews. This project involved cleaning the text, i.e, removing punctuation, non-alphabet characters, etc. I can then do some basic analysis such as calculating the lexical diversity score. Following that I fit the matrix representation of the reviews to a logistical regression classifier to see its performance on these samples",
         "technincal": ["Python", "Jupyter Notebook"]
     },
     {
@@ -28,7 +28,7 @@
         "reponame": "sechevarria98/Language",
         "link": "https://github.com/sechevarria98/Language",
         "title": "Language",
-        "description": "Discord Bot used to moderate a discord server",
+        "description": "Discord Bot used to moderate a Discord server. ",
         "technincal": ["Python", "Discord.py"]
     },
     {
@@ -36,7 +36,7 @@
         "reponame": "sechevarria98/StockWatch",
         "link": "https://github.com/sechevarria98/StockWatch",
         "title": "Stock Watch",
-        "description": "Android app meant to depict a stock watch. A request to an API is made to gather relevant data to be displayed",
+        "description": "Android app meant to depict a stock watch. A request to an API is made to gather relevant data to be displayed. ",
         "technincal": ["Java", "Android Studio"]
     },
     {
