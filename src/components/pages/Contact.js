@@ -6,27 +6,24 @@ import '../../App.css';
 const Contact = () => {
 
     const contacts = {
-        'email': { link: "samechevarria2@gmail.com", svg: <Email/> },
-        'phone': { link: "7739541626", svg: <Phone/> },
-        'github': { link: "https://github.com/sechevarria98", svg: <Github/>},
-        'linkedin': { link: " https://www.linkedin.com/in/samuel-echevarria-793a80199/", svg: <LinkedIn/> }
+        'Email': { link: "samechevarria2@gmail.com", svg: <Email size={70}/> },
+        'Phone': { link: "7739541626", svg: <Phone size={70}/> },
+        'Github': { link: "https://github.com/sechevarria98", svg: <Github size={70}/>},
+        'Linkedin': { link: " https://www.linkedin.com/in/samuel-echevarria-793a80199/", svg: <LinkedIn size={70}/> }
     }
 
     return (
         <div className="page">
             <section className = "cardlist">
                 {Object.entries(contacts).map(( [contact, {link, svg}], index) => (
-                    <article className = "card" key = { index }>
-                        <header className = "cardheader">
-                            <h2> { svg } { contact }</h2>
-                            {contact === 'phone' ? <a href= { "tel:+1" + link }>{ link }</a> : 
-                                <a target="_blank" 
-                                    rel="noreferrer" 
-                                    href = { contact === 'email' ? "mailto:" + link : link } > 
-                                { link } </a>
-                            }
-                        </header>
-                    </article> 
+                    <a target="_blank" rel="noreferrer" href = { contact === 'email' ? "mailto:" + link : (
+                        contact === 'phone' ? "tel:+1" + link : link)}>
+                        <article className = "card" key = { index }>
+                            <header className = "cardheader">
+                                { svg } <h2 className="cardtype"> { contact }</h2>
+                            </header>
+                        </article>
+                    </a> 
                 ))}
 
             </section>

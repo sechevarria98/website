@@ -195,11 +195,10 @@ em {
     text-decoration: none;
 }
 
-.cardheader img {
-    width: 2rem;
-    margin: 0 1.5rem;
+.cardtype {
+    font-weight: 700;
+    font-size: 2rem;
 }
-
 
 .card:hover {
     transform: translateY(-1rem);
