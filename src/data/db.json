@@ -4,7 +4,7 @@
         "reponame": "sechevarria98/website",
         "link": "https://github.com/sechevarria98/website",
         "title": "Personal Website",
-        "description": "An update of my old personal website. I decided to use React.js to create this website. You are currently viewing this project.",
+        "description": "This project serves as an update to my original personal website. To become more proficient in using React.js, I used this framework to create the website you are currently viewing. ",
         "technincal": ["React.js", "JavaScript", "JSX", "CSS", "GitHub Pages", "JSON"]
     },
     {
@@ -12,7 +12,7 @@
         "reponame": "dserapio/websitecalc",
         "link": "https://github.com/dserapio/websitecalc",
         "title": "Global Impact Calculator",
-        "description": " The e-stewards Global Impact Calculator started as a project for my Inter-Professional Project (IPRO) course. The amount of work to deliver a quality web app carried over into the summer of 2020. over the summer, the work consisted of researching the yield amount of various e-waste and building a calculator for people to determine the yields of their e-waste. During this process, the team and I met with representatives from e-Stewards. In these biweekly meetings, we discussed various aspects of the calculator and research.",
+        "description": " The e-stewards Global Impact Calculator started as a project for my Inter-Professional Project (IPRO) course. The amount of work to deliver a quality web app carried over into the summer of 2020. Over the summer, the work consisted of researching the yield amount of various e-waste and building a calculator for people to determine the yields of their e-waste. During this process, the team and I met with representatives from e-Stewards. In these biweekly meetings, we discussed various aspects of the calculator and research.",
         "technincal": ["React.js", "JavaScript", "JSX", "CSS", "GitHub Pages", "JSON"]
     },
     {
@@ -20,7 +20,7 @@
         "reponame": "sechevarria98/CourseraReviews",
         "link": "https://github.com/sechevarria98/CourseraReviews",
         "title": "Coursera Reviews",
-        "description": "Sentiment analysis on Coursera Reviews. There are a little over 100,000 unique reviews. This project involved cleaning the text, i.e, removing punctuation, non-alphabet characters, etc. I can then do some basic analysis such as calculating the lexical diversity score. Following that I fit the matrix representation of the reviews to a logistical regression classifier to see its performance on these samples",
+        "description": "Project performing sentiment analysis on several Coursera reviews. Coursera is an online course provider and the dataset for the reviews provided through a user on Kaggle.",
         "technincal": ["Python", "Jupyter Notebook"]
     },
     {
@@ -28,7 +28,7 @@
         "reponame": "sechevarria98/Language",
         "link": "https://github.com/sechevarria98/Language",
         "title": "Language",
-        "description": "Discord Bot used to moderate a Discord server. ",
+        "description": "Discord Bot used to moderate a Discord server.",
         "technincal": ["Python", "Discord.py"]
     },
     {
@@ -36,7 +36,7 @@
         "reponame": "sechevarria98/StockWatch",
         "link": "https://github.com/sechevarria98/StockWatch",
         "title": "Stock Watch",
-        "description": "Android app meant to depict a stock watch. A request to an API is made to gather relevant data to be displayed. ",
+        "description": "An Android mobile app made to function as any other stock watch. The app displays all performance data of a selected stock by making a call to a stock API which returns all relevant data.",
         "technincal": ["Java", "Android Studio"]
     },
     {
@@ -44,7 +44,7 @@
         "reponame": "sechevarria98/NewsGateway",
         "link": "https://github.com/sechevarria98/NewsGateway",
         "title": "News Gateway",
-        "description": "Android app meant to show news articles. Articles can be displayed by outlet and/or genre. A request to an API is made to gather relevant data",
+        "description": "An Android mobile app made to display news articles based on genre and the news outlet. Based on the user's filter, the app will display a column-based list of several news articles. From there, a user can pick an article that will then show more relevant information. Upon a further click, the app will send the user to the full article.",
         "technincal": ["Java", "Android Studio"]
     },
     {
@@ -52,7 +52,7 @@
         "reponame": "sechevarria98/KnowYourGovernment",
         "link": "https://github.com/sechevarria98/KnowYourGovernment",
         "title": "Know Your Government",
-        "description": "Android app meant to display officials in the Government based on location. A request to an API is made to gather the necessary data",
+        "description": "An Android mobile app made to display Government officials based on their current area. Users can also search other locations to see the different officials. On startup, a column-based list shows the government officials in a hierarchal order. A user can then click on an official to see much more relevant information.",
         "technincal": ["Java", "Android Studio"]
         
     },
@@ -61,7 +61,7 @@
         "reponame": "sechevarria98/SmartParking",
         "link": "https://github.com/sechevarria98/SmartParking",
         "title": "Smart Parking",
-        "description": "Software Engineering Project which simulates an smart parking application. Backend is managed through a PostgreSQL relational database",
+        "description": "A smart parking application made to function like other parking applications. The start of the project involved creating the relational schema to set up the backend. From there, I used the toolkit Swing to create the GUI for the frontend. With Java, I can communicate with the PostgreSQL database for the backend.",
         "technincal": ["Java", "SQL", "PostgreSQL"]
     },
     {
@@ -69,7 +69,7 @@
         "reponame": "sechevarria98/OnlineGroceryStore",
         "link": "https://github.com/sechevarria98/OnlineGroceryStore",
         "title": "Online Grocery Store",
-        "description": "Database Project which simulates an online grocery store. Backend is managed through a PostgreSQL relational database",
+        "description": "This project depicts an Online Grocery Store. The project began through the process of designing the relational schema. From there, using some wireframing tools, a blueprint of how the frontend should look is made. With Java, the backend is managed by being able to communicate with the PostgreSQL database.",
         "technincal": ["Java", "SQL", "PostgreSQL"]
     }
 ]
