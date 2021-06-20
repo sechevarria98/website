@@ -170,15 +170,6 @@ em {
     transition: 0.3s ease;
 }
 
-.download:hover {
-    background: #ffffff;
-    color: #005fbd;
-    letter-spacing: 0.5rem;
-    font-weight: 700;
-    transition: all 0.3s ease 0s;
-    box-shadow: 0rem 0.5rem 3rem -0.5rem #000;
-}
-
 .cardlist {
     display: flex;
     padding: 3rem;
