@@ -16,8 +16,8 @@ const Contact = () => {
         <div className="page">
             <section className = "cardlist">
                 {Object.entries(contacts).map(( [contact, {link, svg}], index) => (
-                    <a target="_blank" rel="noreferrer" href = { contact === 'email' ? "mailto:" + link : (
-                        contact === 'phone' ? "tel:+1" + link : link)}>
+                    <a target="_blank" rel="noreferrer" href = { contact === 'Email' ? "mailto:" + link : (
+                        contact === 'Phone' ? "tel:+1" + link : link)}>
                         <article className = "card" key = { index }>
                             <header className = "cardheader">
                                 { svg } <h2 className="cardtype"> { contact }</h2>
