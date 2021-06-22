@@ -15,9 +15,11 @@ const Projects = () => {
                         <article>
                             <p> {repositories.description} </p>
                             
-                            {repositories.technincal.map((skill, index)=> (
-                                <em key={index}>{skill}</em>
-                            ))}
+                            <div className="technologies">
+                                {repositories.technincal.map((skill, index)=> (
+                                    <em key={index} className="tech">{skill}</em>
+                                ))}
+                            </div>
                         </article>
                     </article>
                 ))}

@@ -138,14 +138,27 @@ em {
     align-items: center;
 }
 
-.maintext {
+.home {
     width: clamp(45ch, 50%, 75ch);
+    font-family: 'Lato';
+    margin: 2rem auto;
+    padding: 0.5rem;
 }
+
 .projects {
     width: clamp(45ch, 50%, 75ch);
     font-family: 'Lato';
     margin: 2rem auto;
     padding: 0.5rem;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech {
+    margin-top: 0.5rem;
 }
 
 .pagenum {
@@ -191,8 +204,9 @@ em {
     font-family: 'Concert One';
 }
 
-.cardheader a {
+.card a {
     text-decoration: none;
+    color: inherit;
 }
 
 .cardtype {
@@ -205,7 +219,7 @@ em {
 }
 
 .card:hover~.card {
-    transform: translateX(8rem);
+    transform: translateX(130px);
 }
 
 .card:not(:first-child) {
